@@ -10,6 +10,10 @@ const Styles = styled.div`
     color: white;
   }
 
+  .nav-link {
+    color: white;
+  }
+
   .img-fluid {
     height: 70px;
     padding: 10px;
@@ -22,20 +26,20 @@ const NavigationBar = () => (
   <Styles>
     <MDBNavbar expand="lg">
       <MDBNavbarBrand href="/"><img src={logoUrl} className='img-fluid' alt="KÜRAT[OR]" /></MDBNavbarBrand>
-      <MDBNavbarToggler aria-controls="basic-navbar-nav" />
-      <MDBCollapse id="basic-navbar-nav">
+      <MDBNavbarToggler />
+      <MDBCollapse id="navbarCollapse3" navbar>
         <MDBNavbarNav right>
           <MDBNavItem active>
             <MDBNavLink to="/">Home</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/collection">Collection</MDBNavLink>
+            <MDBNavLink to="/collection">View</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/wishlist">Wishlist</MDBNavLink>
+            <MDBNavLink to="/editor">Add/Edit</MDBNavLink>
           </MDBNavItem>
           <MDBNavItem>
-            <MDBNavLink to="/ordered">Ordered</MDBNavLink>
+            <MDBNavLink to="/profile">Profile</MDBNavLink>
           </MDBNavItem>
         </MDBNavbarNav>
       </MDBCollapse>

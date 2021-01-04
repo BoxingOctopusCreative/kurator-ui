@@ -1,3 +1,14 @@
 # KÜRAT[OR] UI
 
-React UI Layer for KÜRAT[OR], the retro game collection curation app
+![](https://kurator-public-assets.nyc3.digitaloceanspaces.com/Logo-Black.png)
+
+## Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Contributing](../CONTRIBUTING.md)
+
+## About <a name = "about"></a>
+
+React UI Layer for KÜRAT[OR], the collection tracking application for Retro Video Game collectors

@@ -6,11 +6,12 @@ import { Layout } from './Components/Layout';
 import { Footer } from './Components/Footer';
 import Title from './Components/Title';
 import CollectionTable from './Components/CollectionTable'
+import FilterForm from './Components/FilterForm'
 
 export default class App extends Component {
 
   componentDidMount() {
-    fetch('http://localhost:8000/api/v1/full')
+    fetch('http://localhost:8000/api/v1/collection')
     .then(res => res.json())
     .then((data) => {
         this.setState({ collection: data })
@@ -36,7 +37,9 @@ export default class App extends Component {
               </Layout>
             </MDBCol>
             <MDBCol>
-              <Layout></Layout>
+              <Layout>
+                <FilterForm collection={this.state.collection} />
+              </Layout>
             </MDBCol>
           </MDBRow>
           <MDBRow end></MDBRow>
