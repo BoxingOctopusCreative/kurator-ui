@@ -1,5 +1,5 @@
 import React from 'react';
-import { MDBTable } from 'mdbreact'
+import { MDBTable, MDBTableHead, MDBTableBody } from 'mdbreact'
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -16,15 +16,15 @@ const CollectionTable = ({ collection }) => (
     <>
         <Styles>
             <h2 className="section-title">My Collection</h2>
-            <MDBTable scrollY maxHeight="650px" bordered>
-                <thead className="thead-light">
+            <MDBTable scrollY maxHeight="600px" bordered>
+                <MDBTableHead color="black" textWhite>
                     <tr>
-                        <th scope="col">Title</th>
-                        <th scope="col">Platform</th>
-                        <th scope="col">Status</th>
+                        <th scope="col">TITLE</th>
+                        <th scope="col">PLATFORM</th>
+                        <th scope="col">STATUS</th>
                     </tr>
-                </thead>
-                <tbody>
+                </MDBTableHead>
+                <MDBTableBody>
                     {collection.map((item) => (
                         <>
                             <tr>
@@ -34,7 +34,7 @@ const CollectionTable = ({ collection }) => (
                             </tr>
                         </>
                     ))}
-                </tbody>
+                </MDBTableBody>
             </MDBTable>
         </Styles>
     </>

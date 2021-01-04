@@ -11,4 +11,4 @@
 
 ## About <a name = "about"></a>
 
-React UI Layer for KÜRAT[OR], the collection tracking application for Retro Video Game collectors
+React UI Layer for [KÜRAT[OR]](https://github.com/BoxingOctopus/kurator), the collection tracking application for Retro Video Game collectors

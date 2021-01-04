@@ -29,8 +29,7 @@ export default class App extends Component {
         <Title />
         <NavigationBar />
         <MDBContainer fluid>
-          <MDBRow start></MDBRow>
-          <MDBRow center>
+          <MDBRow start>
             <MDBCol>
               <Layout>
                 <CollectionTable collection={this.state.collection} />
